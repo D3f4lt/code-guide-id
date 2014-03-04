@@ -1,19 +1,22 @@
-# Code Guide
+# Panduan Pedoman Kode
 
-Code Guide is a project for documenting standards for developing flexible, durable, and sustainable HTML and CSS. It comes from years of experience writing code on projects of all sizes. It's not the end-all be-all, but it's a start.
+Panduan Pedoman Kode adalah sebuah project untuk mendokumentasikan standar dari mengembangkan HTML dan CSS yang fleksibel, tahan lama, dan berkelanjutan. Ini semua datang dari pengalaman bertahun-tahun menulis kode untuk project dalam ukuran apapun. Ini bukanlah sebuah solusi akhir, tetapi merupakan sebuah awal.
 
-**[Start reading ☞](http://mdo.github.io/code-guide)**
+**[Mulai Membaca ☞](http://diagramatics.github.io/code-guide-id)**
+**[Original — Bahasa Inggris ☞](http://mdo.github.io/code-guide)**
 
-### License
+### Lisensi
 
-Released under MIT by, and copyright 2014, @mdo.
+Dirilis dibawah MIT oleh, dan copyright 2014, @mdo.
 
-### Thanks
+### Terimakasih
 
-Heavily inspired by [Idiomatic CSS](https://github.com/necolas/idiomatic-css) and the [GitHub Styleguide](http://github.com/styleguide).
+Terinspirasi berat oleh [Idiomatic CSS](https://github.com/necolas/idiomatic-css) dan [GitHub Styleguide](http://github.com/styleguide).
 
-### Translates
+### Penejermahan
 
-[Portuguese](http://diegoeis.github.io/code-guide/pt-br/) - Translated by [Diego Eis](http://tableless.com.br/)
+[Bahasa Portugis](http://diegoeis.github.io/code-guide/pt-br/) - Diterjemahkan oleh [Diego Eis](http://tableless.com.br/)
+[Bahasa Spanyol](http://adrianayala.mx/code-guide/es/) - Diterjemahkan oleh [Adrian Ayala](http://adrianayala.mx)
+[Bahasa Indonesia](http://diagramatics.github.io/code-guide-id) - Diterjemahkan oleh [Steven Sinatra](http://diagramatics.me)
 
 <3
