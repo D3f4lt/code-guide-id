@@ -1,5 +1,5 @@
-name:          Panduan Pedoman Kode oleh @mdo — Terjemahan Bahasa Indonesia dari @diagramatics
-description:   Standar untuk membuat HTML dan CSS yang fleksibel, tahan lama, dan berkelanjutan.
+name:          Panduan Pedoman Kode oleh @mdo
+description:   Terjemahan Bahasa Indonesia dari @diagramatics <br> Standar untuk membuat HTML dan CSS yang fleksibel, tahan lama, dan berkelanjutan.
 url:           http://diagramatics.github.io/code-guide-id
 
 markdown:      rdiscount
