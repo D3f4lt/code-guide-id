@@ -4,7 +4,7 @@ layout: default
 
 
 <div class="heading" id="toc">
-  <h2>Table of contents</h2>
+  <h2>Daftar isi</h2>
 </div>
 <div class="section toc">
   <div class="col">
@@ -59,12 +59,12 @@ layout: default
 
 <div class="section" id="html-syntax">
   <div class="col">
-    <h3>Syntax</h3>
+    <h3>Sintaksis</h3>
     <ul>
-      <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
-      <li>Nested elements should be indented once (two spaces).</li>
-      <li>Always use double quotes, never single quotes, on attributes.</li>
-      <li>Don't include a trailing slash in self-closing elements—the <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 spec</a> says they're optional.</li>
+      <li>Gunakan tabs lembut dengan dua spasi—inilah cara satu-satunya untuk menjamin kode ditampilkan dengan sama di setiap lingkungan.</li>
+      <li>Elemen yang terletak di dalam elemen lain (nested) harus di-indent sekali (dua spasi).</li>
+      <li>Selalu pakai tanda petik ganda, bukan tanda petik tunggal, pada atribut-atribut.</li>
+      <li>Jangan masukkan sebuah garis miring tertinggal di elemen yang menutup sendiri—<a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">spec HTML5 (Bahasa Inggris)</a> mengatakan bahwa mereka opsional.</li>
     </ul>
   </div>
   <div class="col">
@@ -74,8 +74,8 @@ layout: default
 
 <div class="section" id="html-doctype">
   <div class="col">
-    <h3>HTML5 doctype</h3>
-    <p>Enforce standards mode and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.</p>
+    <h3>Doctype pada HTML5</h3>
+    <p>Paksakan mode yang telah distandarisasi dan rendering yang lebih konsisten di setiap browser yang mampu dengan sebuah doctype sederhana di awal dari semua halaman HTML.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/doctype.html %}{% endhighlight %}
@@ -84,8 +84,8 @@ layout: default
 
 <div class="section" id="html-encoding">
   <div class="col">
-    <h3>Character encoding</h3>
-    <p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding.</p>
+    <h3>Encoding pada karakter</h3>
+    <p>Pastikan rendering yang tepat secara cepat dan mudah dengan menyatakan sebuah encoding karakter yang jelas.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/encoding.html %}{% endhighlight %}
@@ -94,13 +94,13 @@ layout: default
 
 <div class="section" id="html-style-script">
   <div class="col">
-    <h3>CSS and JavaScript includes</h3>
-    <p>Per HTML5 spec, typically there is no need to specify a <code>type</code> when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code> are their respective defaults.</p>
-    <h4>HTML5 spec links</h4>
+    <h3>Include pada CSS dan JavaScript</h3>
+    <p>Per spec HTML5, tidak diperlukan untuk menyatakan sebuah <code>type</code> ketika meng-include file-file CSS dan JavaScript secara <code>text/css</code> dan <code>text/javascript</code> sebagai bawaan mereka masing-masing.</p>
+    <h4>Tautan-tautan spec HTML5</h4>
     <ul>
-      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Using link</a></li>
-      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element">Using style</a></li>
-      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element">Using script</a></li>
+      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Menggunakan link (Bahasa Inggris)</a></li>
+      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element">Menggunakan style (Bahasa Inggris)</a></li>
+      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element">Menggunakan script (Bahasa Inggris)</a></li>
     </ul>
   </div>
   <div class="col">
@@ -110,22 +110,22 @@ layout: default
 
 <div class="section" id="html-practicality">
   <div class="col">
-    <h3>Practicality over purity</h3>
-    <p>Strive to maintain HTML standards and semantics, but not at the expense of practicality. Use the least amount of markup with the fewest intricacies whenever possible.</p>
+    <h3>Kepraktisan atas kemurnian</h3>
+    <p>Berjuanglah untuk mempertahankan standar dan semantik HTML, tetapi tidak dengan mengorbankan kepraktisan. Gunakan markup sesedikit mungkin dengan lika-liku sesedikit mungkin kapanpun juga.</p>
   </div>
 </div>
 
 <div class="section" id="html-attribute-order">
   <div class="col">
-    <h3>Attribute order</h3>
-    <p>HTML attributes should come in this particular order for easier reading of code.</p>
+    <h3>Urutan atribut</h3>
+    <p>Atribut HTML harus ditulis dengan urutan berikut agar kode lebih mudah dibaca.</p>
     <ul>
       <li><code>class</code></li>
       <li><code>id</code>, <code>name</code></li>
       <li><code>data-*</code></li>
       <li><code>src</code>, <code>for</code>, <code>type</code>, <code>href</code></li>
     </ul>
-    <p>Classes make for great reusable components, so they come first. Ids are more specific and should be used sparingly (e.g., for in-page bookmarks), so they come second.</p>
+    <p>Class sangat berguna untuk komponen-komponen yang akan dipakai ulang, sehingga class diurutkan pertama. ID lebih spesifik dan harus digunakan dengan hemat (misalnya untuk bookmark pada halaman), sehingga ID diurutkan kedua.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/attribute-order.html %}{% endhighlight %}
@@ -134,17 +134,17 @@ layout: default
 
 <div class="section" id="html-boolean-attributes">
   <div class="col">
-    <h3>Boolean attributes</h3>
-    <p>A boolean attribute is one that needs no declared value. XHTML required you to declare a value, but HTML5 has no such requirement.</p>
-    <p>For further reading, consult the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">WhatWG section on boolean attributes</a>:</p>
+    <h3>Atribut boolean</h3>
+    <p>Sebuah atribut boolean adalah atribut yang tidak perlu value yang dinyatakan. Pada XHTML diperlukan value tersebut, tetapi HTML5 tidak membutuhkannya.</p>
+    <p>Untuk pembacaan lebih lanjut, lihat <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">bagian di WhatWG mengenai atribut boolean (Bahasa Inggris)</a>:</p>
     <blockquote>
-      <p>The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.</p>
+      <p>Keberadaan sebuah atribut boolean pada sebuah elemen mewakili value 'true', dan ketidakberadaan dari atribut tersebut mewakili value 'false'.</p>
     </blockquote>
-    <p>If you <em>must</em> include the attribute's value, and <strong>you don't need to</strong>, follow this WhatWG guideline:</p>
+    <p>Jika kamu <em>harus</em> memasukkan value dari atribut tersebut, dan <strong>kamu tidak perlu melakukannya</strong>, ikuti pedoman dari WhatWG berikut:</p>
     <blockquote>
-      <p>If the attribute is present, its value must either be the empty string or [...] the attribute's canonical name, with no leading or trailing whitespace.</p>
+      <p>Ketika ada atribut yang dimaksud, value dari atribut tersebut harus merupakan string kosong atau [...] nama resmi atribut tersebut, tanpa spasi di depan atau dibelakangnya.</p>
     </blockquote>
-    <p><strong>In short, don't add a value.</strong></p>
+    <p><strong>Kesimpulannya, jangan tambahkan sebuah value.</strong></p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/boolean-attributes.html %}{% endhighlight %}
@@ -153,8 +153,8 @@ layout: default
 
 <div class="section" id="html-reducing-markup">
   <div class="col">
-    <h3>Reducing markup</h3>
-    <p>Whenever possible, avoid superfluous parent elements when writing HTML. Many times this requires iteration and refactoring, but produces less HTML. Take the following example:</p>
+    <h3>Mengurangi markup</h3>
+    <p>Ketika mungkin, hindari elemen induk tidak berguna ketika menulis HTML. Seringkali ini memerlukan perulangan dan penyusunan ulang struktur, tetapi menghasilkan HTML yang lebih sedikit. Ambil contoh berikut ini:</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/reducing-markup.html %}{% endhighlight %}
@@ -163,8 +163,8 @@ layout: default
 
 <div class="section" id="html-javascript">
   <div class="col">
-    <h3>JavaScript generated markup</h3>
-    <p>Writing markup in a JavaScript file makes the content harder to find, harder to edit, and less performant. Avoid it whenever possible.</p>
+    <h3>Markup hasil perbuatan JavaScript</h3>
+    <p>Menulis markup di sebuah file JavaScript membuat konten tersebut susah dicari, susah diedit, dan kecepatannya menurun. Hindarilah ketika mungkin.</p>
   </div>
 </div>
 
@@ -176,23 +176,23 @@ layout: default
 
 <div class="section" id="css-syntax">
   <div class="col">
-    <h3>Syntax</h3>
+    <h3>Sintaksis</h3>
     <ul>
-      <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
-      <li>When grouping selectors, keep individual selectors to a single line.</li>
-      <li>Include one space before the opening brace of declaration blocks for legibility.</li>
-      <li>Place closing braces of declaration blocks on a new line.</li>
-      <li>Include one space after <code>:</code> for each declaration.</li>
-      <li>Each declaration should appear on its own line for more accurate error reporting.</li>
-      <li>End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.</li>
-      <li>Comma-separated values should include a space after each comma.</li>
-      <li>Don't include spaces after commas <em>within</em> <code>rgb()</code> or <code>rgba()</code> colors, and don't preface values with a leading zero.</li>
-      <li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li>
-      <li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li>
-      <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</li>
-      <li>Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code>.</li>
+      <li>Gunakan tab lembut dengan dua spasi—inilah satu-satunya cara untuk menjamin kode ditampilkan sama di setiap lingkungan.</li>
+      <li>Ketika mengelompokkan selector, taruh setiap selector masing-masing satu baris.</li>
+      <li>Tambahkan satu spasi sebelum tanda buka kurung kurawal dari blok-blok pernyataan untuk lebih mudah dibaca.</li>
+      <li>Taruh tanda tutup kurung kurawal dari blok-blok deklarasi di sebuah baris baru.</li>
+      <li>Masukkan satu spasi setelah <code>:</code> untuk pernyataan yang lebih mudah.</li>
+      <li>Setiap deklarasi harus terlihat pada barisnya tersendiri untuk laporan error yang lebih akurat.</li>
+      <li>Akhiri setiap deklarasi dengan sebuah tanda titik koma. Pada deklarasi terakhir, hal ini pilihan tersendiri, tetapi kode kamu lebih mudah menyebabkan error tanpanya.</li>
+      <li>Value yang dipisah dengan tanda koma harus mempunyai sebuah spasi setelah setiap tanda koma.</li>
+      <li>Jangan masukkan spasi setelah koma <em>didalam</em> warna <code>rgb()</code> atau <code>rgba()</code>, dan jangan mulai sebuah value dengan angka 0 didepannya.</li>
+      <li>Buat semua value hex dalam huruf kecil, misalnya <code>#fff</code>. Huruf kecil lebih mudah dilihat ketika sebuah dokumen dibaca sepintas karena bentuk mereka lebih unik.</li>
+      <li>Gunakan value hex pendek ketika ada, misalnya <code>#fff</code> daripada <code>#ffffff</code>.</li>
+      <li>Berikan tanda kutip pada value atribut di selector, misalnya <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">Mereka hanya diperlukan pada kasus tertentu (Bahasa Inggris)</a>, dan ini merupakan praktek baik agar konsisten.</li>
+      <li>Hindari menuliskan satuan untuk value nol, misalnya <code>margin: 0;</code> daripada <code>margin: 0px;</code>.</li>
     </ul>
-    <p>Questions on the terms used here? See the <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> on Wikipedia.</p>
+    <p>Ada pertanyaan pada istilah yang digunakan disini. Lihat <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">bagian sintaksis dari artikel Cascading Style Sheets</a> di Wikipedia Bahasa Inggris.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/syntax.css %}{% endhighlight %}
