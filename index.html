@@ -33,7 +33,7 @@ layout: default
       <li><a href="#css-comments">Komentar</a></li>
       <li><a href="#css-classes">Class</a></li>
       <li><a href="#css-selectors">Selector</a></li>
-      <li><a href="#css-organization">Pengurutan</a></li>
+      <li><a href="#css-organization">Penyusunan</a></li>
     </ul>
   </div>
 </div>
@@ -182,9 +182,9 @@ layout: default
     <ul>
       <li>Gunakan tab lembut dengan dua spasi—inilah satu-satunya cara untuk menjamin kode ditampilkan sama di setiap lingkungan.</li>
       <li>Ketika mengelompokkan selector, taruh setiap selector masing-masing satu baris.</li>
-      <li>Tambahkan satu spasi sebelum tanda buka kurung kurawal dari blok-blok pernyataan untuk lebih mudah dibaca.</li>
+      <li>Tambahkan satu spasi sebelum tanda buka kurung kurawal dari blok-blok deklarasi untuk lebih mudah dibaca.</li>
       <li>Taruh tanda tutup kurung kurawal dari blok-blok deklarasi di sebuah baris baru.</li>
-      <li>Masukkan satu spasi setelah <code>:</code> untuk pernyataan yang lebih mudah.</li>
+      <li>Masukkan satu spasi setelah <code>:</code> untuk deklarasi yang lebih mudah.</li>
       <li>Setiap deklarasi harus terlihat pada barisnya tersendiri untuk laporan error yang lebih akurat.</li>
       <li>Akhiri setiap deklarasi dengan sebuah tanda titik koma. Pada deklarasi terakhir, hal ini pilihan tersendiri, tetapi kode kamu lebih mudah menyebabkan error tanpanya.</li>
       <li>Value yang dipisah dengan tanda koma harus mempunyai sebuah spasi setelah setiap tanda koma.</li>
@@ -203,17 +203,18 @@ layout: default
 
 <div class="section" id="css-declaration-order">
   <div class="col">
-    <h3>Declaration order</h3>
+    <h3>Urutan deklarasi</h3>
+    <p>Deklarasi properti yang berkaitan harus dikelompokkan dengan urutan:</p>
     <p>Related property declarations should be grouped together following the order:</p>
     <ol>
-      <li>Positioning</li>
-      <li>Box model</li>
-      <li>Typographic</li>
+      <li>Peletakkan</li>
+      <li>Model kotak</li>
+      <li>Tipografi</li>
       <li>Visual</li>
     </ol>
-    <p>Positioning comes first because it can remove an element from the normal flow of the document and override box model related styles. The box model comes next as it dictates a component's dimensions and placement.</p>
-    <p>Everything else takes place <em>inside</em> the component or without impacting the previous two sections, and thus they come last.</p>
-    <p>For a complete list of properties and their order, please see <a href="http://twitter.github.com/recess">Recess</a>.</p>
+    <p>Peletakkan diurutkan pertama karena dapat menghilangkan sebuah elemen dari alur normal dokumen tersebut dan mengesampingkan style dari model kotak yang berkaitan.</p>
+    <p>Semua deklarasi yang lain dilakukan <em>di dalam</em> komponen tersebut atau tanpa mempengaruhi dua bagian sebelumnya, dan karena itulah mereka diletakkan terakhir.</p>
+    <p>Untuk daftar lengkap dari properti dan urutannya, lihat <a href="http://twitter.github.com/recess">Recess (Bahasa Inggris)</a>.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/declaration-order.css %}{% endhighlight %}
@@ -222,8 +223,8 @@ layout: default
 
 <div class="section" id="css-media-queries">
   <div class="col">
-    <h3>Media query placement</h3>
-    <p>Place media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. Doing so only makes it easier for folks to miss them in the future. Here's a typical setup.</p>
+    <h3>Peletakan media query</h3>
+    <p>Letakkan media query dekat dengan set aturan yang berhubungan ketika bisa. Jangan dikumpulkan semuanya di sebuah stylesheet yang terpisah atau di ujung dokumen. Itu hanya membuat orang-orang luput dari penglihatan mereka kedepannya. Ini contoh sebuah pengarutan yang umum.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/media-queries.css %}{% endhighlight %}
@@ -232,9 +233,9 @@ layout: default
 
 <div class="section" id="css-prefixed-properties">
   <div class="col">
-    <h3>Prefixed properties</h3>
-    <p>When using vendor prefixed properties, indent each property such that the declaration's value lines up vertically for easy multi-line editing.</p>
-    <p>In Textmate, use <strong>Text &rarr; Edit Each Line in Selection</strong> (&#8963;&#8984;A). In Sublime Text 2, use <strong>Selection &rarr; Add Previous Line</strong> (&#8963;&#8679;&uarr;) and <strong>Selection &rarr;  Add Next Line</strong> (&#8963;&#8679;&darr;).</p>
+    <h3>Properti yang mempunyai prefix</h3>
+    <p>Ketika menggunakan properti yang memiliki vendor prefix, indent setiap properti sehingga value dari pertanyaan tersebut tersusun rapi untuk editan multi-line yang mudah.</p>
+    <p>Di Textmate, gunakan <strong>Text &rarr; Edit Each Line in Selection</strong> (&#8963;&#8984;A). Di Sublime Text 2, gunakan <strong>Selection &rarr; Add Previous Line</strong> (&#8963;&#8679;&uarr;) dan <strong>Selection &rarr;  Add Next Line</strong> (&#8963;&#8679;&darr;).</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/prefixed-properties.css %}{% endhighlight %}
@@ -243,9 +244,9 @@ layout: default
 
 <div class="section" id="css-single-declarations">
   <div class="col">
-    <h3>Single declarations</h3>
-    <p>In instances where a rule set includes <storng>only one declaration</strong>, consider removing line breaks for readability and faster editing. Any rule set with multiple declarations should be split to separate lines.</p>
-    <p>The key factor here is error detection—e.g., a CSS validator stating you have a syntax error on Line 183. With a single declaration, there's no missing it. With multiple declarations, separate lines is a must for your sanity.</p>
+    <h3>Deklarasi tunggal</h3>
+    <p>Di kejadian ketika sebuah set peraturan memiliki <strong>hanya satu deklarasi</strong>, pertimbangkan untuk menghilangkan line break untuk lebih mudah dibaca dan edit yang lebih cepat. Setiap set peraturan dengan dua atau lebih deklarasi harus dipisahkan ke baris masing-masing.</p>
+    <p>Faktor utama pada hal ini adalah deteksi error—misalnya sebuah CSS validator mengatakan bahwa ada syntax error pada Baris 183. Dengan sebuah deklarasi tunggal, tidak ada yang luput. Dengan deklarasi ganda, baris yang terpisah diperlukan untuk kesehatan jiwa.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/single-declarations.css %}{% endhighlight %}
@@ -254,8 +255,8 @@ layout: default
 
 <div class="section" id="css-shorthand">
   <div class="col">
-    <h3>Shorthand notation</h3>
-    <p>Strive to limit use of shorthand declarations to instances where you must explicitly set all the avaialble values. Common overused shorthand properties include:</p>
+    <h3>Penulisan pendek</h3>
+    <p>Berjuang untuk membatasi penggunaan deklarasi yang ditulis pendek pada hal-hal dimana anda harus mengeset secara jelas setiap value yang ada. Properti yang ditulis pendek yang sering digunakan secara berlebihan berisi:</p>
     <ul>
       <li><code>padding</code></li>
       <li><code>margin</code></li>
@@ -264,8 +265,8 @@ layout: default
       <li><code>border</code></li>
       <li><code>border-radius</code></li>
     </ul>
-    <p>Often times we don't need to set all the values a shorthand property represents. For example, HTML headings only set top and bottom margin, so when necessary, only override those two values. Excessive use of shorthand properties often leads to sloppier code with unnecessary overrides and unintented side effects.</p>
-    <p>The Mozilla Developer Network has a great article on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">shorthand properties</a> for those unfamiliar with notation and behavior.</p>
+    <p>Seringkali kita tidak perlu mengeset semua value yang diwakili sebuah properti yang ditulis pendek. Misalnya, heading pada HTML hanya mengeset margin atas dan bawah, jadi ketika diperlukan, override kedua value tersebut. Penggunakan properti yang ditulis pendek secara berlebihan sering mengarah ke penulisan kode yang lebih ceroboh dengan override yang tidak diperlukan dan efek samping yang tidak diinginkan.</p>
+    <p>Mozilla Developer Network mempunyai sebuah artikel bagus mengenai <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">properti yang ditulis pendek (Bahasa Inggris)</a> untuk mereka yang tidak terbiasa dengan notasi dan perilaku.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/shorthand.css %}{% endhighlight %}
@@ -274,8 +275,8 @@ layout: default
 
 <div class="section" id="css-nesting">
   <div class="col">
-    <h3>Nesting in LESS and SASS</h3>
-    <p>Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested.</p>
+    <h3>Nesting pada LESS dan SASS</h3>
+    <p>Hindari nesting yang tidak diperlukan. Hanya karena kamu bisa nesting, bukan berarti kamu harus selalu melakukannya. Pertimbangkan nesting ketika kamu harus mencakup style pada sebuah induk dan ada dua atau lebih elemen yang harus di-nesting.</p>
   </div>
   <div class="col">
     {% highlight scss %}{% include css/nesting.scss %}{% endhighlight %}
@@ -284,8 +285,9 @@ layout: default
 
 <div class="section" id="css-comments">
   <div class="col">
-    <h3>Comments</h3>
-    <p>Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others. Great code comments convey context or purpose. Do not simply reiterate a component or class name.</p>
+    <h3>Komentar</h3>
+    <p>Kode itu ditulis dan dijaga oleh orang-orang. Pastikan kode kamu deskriptif, dikomentari dengan bagus, dan dapat dipahami orang lain. Komentar pada kode yang bagus mencakup konteks dan kegunaan. Jangan hanya mengulang sebuah nama komponen atau nama dari class.</p>
+    <p>Pastikan untuk menulis dalam kalimat yang lengkap atau komentar yang lebih besar dan frase singkat untuk catatan umum.</p>
     <p>Be sure to write in complete sentences or larger comments and succinct phrases for general notes.</p>
   </div>
   <div class="col">
@@ -295,14 +297,14 @@ layout: default
 
 <div class="section" id="css-classes">
   <div class="col">
-    <h3>Class names</h3>
+    <h3>Nama class</h3>
     <ul>
-      <li>Keep classes lowercase and use dashes (not underscores or camelCase). Dashes serve as natural breaks in related class (e.g., <code>.btn</code> and <code>.btn-danger</code>).</li>
-      <li>Avoid excessive and arbitrary shorthand notation. <code>.btn</code> is useful for <em>button</em>, but <code>.s</code> doesn't mean anything.</li>
-      <li>Keep classes as short and succinct as possible.</li>
-      <li>Use meaningful names; use structural or purposeful names over presentational.</li>
-      <li>Prefix classes based on the closest parent or base class.</li>
-      <li>Use <code>.js-*</code> classes to denote behavior (as opposed to style), but keep these classes out of your CSS.</li>
+      <li>Pastikan class memakai huruf kecil dan gunakan tanda pisah (bukan tanda garis bawah atau camelCase). Tanda pisah menjadi sebuah pemutusan alamiah pada class yang berhubungan (misalnya <code>.btn</code> dan <code>.btn-danger</code>.</li>
+      <li>Hindari penulisan pendek yang berkelebihan dan sewenang-wenang. <code>.btn</code> berguna untuk <em>button</em>, tetapi <code>.s</code> tidak berarti apapun.</li>
+      <li>Pastikan nama class sependek dan sesingkat mungkin.</li>
+      <li>Gunakan nama yang berarti; gunakan nama yang berstruktur atau berguna dibanding nama yang terlihat bagus.</li>
+      <li>Prefix sebuah class berdasarkan induk terdekat atau class dasarnya.</li>
+      <li>Gunakan class <code>.js-*</code> untuk menandakan tingkah lakunya (dibandingkan dengan tampilannya), tetapi taruh class-class berikut diluar CSS kamu.</li>
     </ul>
   </div>
   <div class="col">
@@ -312,17 +314,17 @@ layout: default
 
 <div class="section" id="css-selectors">
   <div class="col">
-    <h3>Selectors</h3>
+    <h3>Selector</h3>
     <ul>
-      <li>Use classes over generic element tag for optimum rendering performance.</li>
-      <li>Avoid using several attribute selectors (e.g., <code>[class^="..."]</code>) on commonly occuring components. Browser performance is known to be impacted by these.</li>
-      <li>Keep selectors short and strive to limit the number of elements in each selector to three.</li>
-      <li>Scope classes to the closest parent <strong>only</strong> when necessary (e.g., when not using prefixed classes).</li>
+      <li>Gunakan class dibanding tag elemen yang generik untuk kecepatan rendering yang optimal.</li>
+      <li>Hindari penggunaan beberapa selektor atribut (misalnya <code>[class^="..."]</code>) pada komponen yang sering berlaku. Kemampuan browser dikenal terkena dampak dari hal-hal ini.</li>
+      <li>Jagalah selector agar tetap pendek dan berjuang untuk membatasi jumlah elemen di setiap selector hanya tiga.</li>
+      <li>Cakupkan class pada induk terdekat <strong>hanya</strong> ketika diperlukan (misalnya ketika tidak menggunakan class yang telah di-prefix).</li>
     </ul>
-    <p>Additional reading:</p>
+    <p>Bacaan tambahan:</p>
     <ul>
-      <li><a href="http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/">Scope CSS classes with prefixes</a></li>
-      <li><a href="http://markdotto.com/2012/03/02/stop-the-cascade/">Stop the cascade</a></li>
+      <li><a href="http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/">Cakupkan class CSS dengan prefix (Bahasa Inggris)</a></li>
+      <li><a href="http://markdotto.com/2012/03/02/stop-the-cascade/">Hentikan cascade (Bahasa Inggris)</a></li>
     </ul>
   </div>
   <div class="col">
@@ -332,12 +334,12 @@ layout: default
 
 <div class="section" id="css-organization">
   <div class="col">
-    <h3>Organization</h3>
+    <h3>Penyusunan</h3>
     <ul>
-      <li>Organize sections of code by component.</li>
-      <li>Develop a consistent commenting hierarchy.</li>
-      <li>Use consistent white space to your advantage when separating sections of code for scanning larger documents.</li>
-      <li>When using multiple CSS files, break them down by component instead of page. Pages can be rearranged and components moved.</li>
+      <li>Susun bagian-bagian kode berdasarkan komponen.</li>
+      <li>Kembangkan sebuah hirarki komentar yang konsisten.</li>
+      <li>Gunakan spasi yang konsisten untuk keuntungan kamu ketika memisahkan bagian-bagian dari sebuah kode untuk pembacaan singkat dokumen yang lebih besar ukurannya.</li>
+      <li>Ketika menggunakan dua atau lebih file CSS, pisahkan berdasarkan komponen daripada halaman. Halaman dapat disusun ulang dan komponen dapat dipindahkan.</li>
     </ul>
   </div>
   <div class="col">
@@ -347,14 +349,16 @@ layout: default
 
 <div class="section" id="css-editor-prefs">
   <div class="col">
-    <h3>Editor preferences</h3>
+    <h3>Preferensi editor</h3>
+    <p>Set editor kamu pada pengaturan berikut untuk menghindari kode yang umumnya tidak konsisten dan diff yang kotor:</p>
     <p>Set your editor to the following settings to avoid common code inconsistencies and dirty diffs:</p>
     <ul>
-      <li>Use soft-tabs set to two spaces.</li>
-      <li>Trim trailing white space on save.</li>
-      <li>Set encoding to UTF-8.</li>
-      <li>Add new line at end of files.</li>
+      <li>Set tab lembut menjadi dua spasi.</li>
+      <li>Potong sisa spasi di depan ketika save.</li>
+      <li>Set encoding menjadi UTF-8.</li>
+      <li>Tambahkan baris baru pada ujung file.</li>
     </ul>
+    <p>Pertimbangkan mendokumentasi dan menerapkan preferensi ini pada file <code>.editorconfig</code> project kamu. Sebagai contoh, lihat <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">.editorconfig pada Bootstrap</a>. Pelajari lebih banyak <a href="http://editorconfig.org">mengenai EditorConfig (Bahasa Inggris)</a>.</p>
     <p>Consider documenting and applying these preferences to your project's <code>.editorconfig</code> file. For an example, see <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">the one in Bootstrap</a>. Learn more <a href="http://editorconfig.org">about EditorConfig</a>.</p>
   </div>
 </div>
