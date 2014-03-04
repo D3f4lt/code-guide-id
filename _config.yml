@@ -1,6 +1,6 @@
-name:          Code Guide by @mdo
-description:   Standards for developing flexible, durable, and sustainable HTML and CSS.
-url:           http://mdo.github.com/code-guide
+name:          Panduan Pedoman Kode oleh @mdo — Terjemahan Bahasa Indonesia dari @diagramatics
+description:   Standar untuk membuat HTML dan CSS yang fleksibel, tahan lama, dan berkelanjutan.
+url:           http://diagramatics.github.io/code-guide-id
 
 markdown:      rdiscount
 permalink:     pretty
