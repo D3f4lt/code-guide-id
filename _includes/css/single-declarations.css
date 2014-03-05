@@ -1,9 +1,9 @@
-/* Single declarations on one line */
+/* Deklarasi tunggal dalam satu baris */
 .span1 { width: 60px; }
 .span2 { width: 140px; }
 .span3 { width: 220px; }
 
-/* Multiple declarations, one per line */
+/* Lebih dari satu deklarasi, satu setiap barisnya */
 .sprite {
   display: inline-block;
   width: 16px;

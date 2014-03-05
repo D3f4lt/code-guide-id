@@ -1,10 +1,10 @@
-/* Bad example */
+/* Contoh tidak baik */
 /* Modal header */
 .modal-header {
   ...
 }
 
-/* Good example */
+/* Contoh baik */
 /* Wrapping element for .modal-title and .modal-close */
 .modal-header {
   ...
