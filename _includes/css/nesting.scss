@@ -1,8 +1,8 @@
-// Without nesting
+// Tanpa nesting
 .table > thead > tr > th { … }
 .table > thead > tr > td { … }
 
-// With nesting
+// Dengan nesting
 .table > thead > tr {
   > th { … }
   > td { … }
