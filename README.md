@@ -2,8 +2,10 @@
 
 Panduan Pedoman Kode adalah sebuah project untuk mendokumentasikan standar dari mengembangkan HTML dan CSS yang fleksibel, tahan lama, dan berkelanjutan. Ini semua datang dari pengalaman bertahun-tahun menulis kode untuk project dalam ukuran apapun. Ini bukanlah sebuah solusi akhir, tetapi merupakan sebuah awal.
 
-**[Mulai Membaca ☞](http://diagramatics.github.io/code-guide-id)**  
+**[Mulai Membaca ☞](http://diagramatics.github.io/code-guide-id)**
 **[Original — Bahasa Inggris ☞](http://mdo.github.io/code-guide)**
+
+---
 
 ### Lisensi
 
@@ -15,8 +17,19 @@ Terinspirasi berat oleh [Idiomatic CSS](https://github.com/necolas/idiomatic-css
 
 ### Penejermahan
 
-[Bahasa Portugis](http://diegoeis.github.io/code-guide/pt-br/) - Diterjemahkan oleh [Diego Eis](http://tableless.com.br/)  
-[Bahasa Spanyol](http://adrianayala.mx/code-guide/es/) - Diterjemahkan oleh [Adrian Ayala](http://adrianayala.mx)  
+Semua penerjemahan diurus oleh pencipta-penciptanya dan mungkin tidak selalu semutakhir dengan [aslinya](http://mdo.github.io/code-guide).
+
+[Bahasa Ceko](http://smedzlatko.github.io/) - Diterjemahkan oleh [Martin Myslík](https://github.com/Smedzlatko)
+[Bahasa Cina](http://zoomzhao.github.io/code-guide) - Diterjemahkan oleh [Zoom Zhao](https://github.com/ZoomZhao)
+[Bahasa Cina, Tradisional](http://juanitofatas.github.io/) - Diterjemahkan oleh [Juanito Fatas](https://github.com/JuanitoFatas)
 [Bahasa Indonesia](http://diagramatics.github.io/code-guide-id) - Diterjemahkan oleh [Steven Sinatra](http://diagramatics.me)
+[Bahasa Itali](http://alessandro1997.github.io/code-guide) - Diterjemahkan oleh [Alessandro Desantis](http://github.com/alessandro1997)
+[Bahasa Portugis](http://diegoeis.github.io/code-guide/pt-br/) - Diterjemahkan oleh [Diego Eis](http://tableless.com.br/)
+[Bahasa Rusia](http://instanceofpro.github.io/code-guide/) - Diterjemahkan oleh [Eugene Abrosimov](https://github.com/instanceofpro)
+[Bahasa Spanyol](http://adrianayala.mx/code-guide/es/) - Diterjemahkan oleh [Adrian Ayala](http://adrianayala.mx)
+
+
+
+Ada sebuah terjemahan yang ingin kamu taruh linknya disini? Buka sebuah pull request di [repo yang asli](http://mdo.github.io/code-guide) untuk menambahkannya. Pastikan untuk menambahkannya secara urutan alfabetis.
 
 <3

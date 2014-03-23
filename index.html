@@ -12,7 +12,9 @@ layout: default
     <ul>
       <li><a href="#html-syntax">Sintaksis</a></li>
       <li><a href="#html-doctype">Doctype pada HTML5</a></li>
+      <li><a href="#html-lang">Atribut Bahasa</a></li>
       <li><a href="#html-encoding">Encoding pada karakter</a></li>
+      <li><a href="#html-ie-compatibility-mode">Mode kompatibilitas Internet Explorer</a></li>
       <li><a href="#html-style-script">Include pada CSS dan JavaScript</a></li>
       <li><a href="#html-practicality">Kepraktisan atas kemurnian</a></li>
       <li><a href="#html-attribute-order">Urutan atribut</a></li>
@@ -26,6 +28,7 @@ layout: default
     <ul>
       <li><a href="#css-syntax">Sintaksis CSS</a></li>
       <li><a href="#css-declaration-order">Urutan deklarasi</a></li>
+      <li><a href="#css-import">Jangan gunakan @import</a></li>
       <li><a href="#css-media-queries">Peletakan media query</a></li>
       <li><a href="#css-prefixed-properties">Properti yang mempunyai prefix</a></li>
       <li><a href="#css-single-declarations">Aturan dengan deklarasi tunggal</a></li>
@@ -66,6 +69,7 @@ layout: default
       <li>Elemen yang terletak di dalam elemen lain (nested) harus di-indent sekali (dua spasi).</li>
       <li>Selalu pakai tanda petik ganda, bukan tanda petik tunggal, pada atribut-atribut.</li>
       <li>Jangan masukkan sebuah garis miring tertinggal di elemen yang menutup sendiri—<a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">spec HTML5 (Bahasa Inggris)</a> mengatakan bahwa mereka opsional.</li>
+      <li>Jangan menghilangkan tag penutup yang opsional (contohnya <code>&lt;/li&gt;</code> atau <code>&lt;/body&gt;</code>.</li>
     </ul>
   </div>
   <div class="col">
@@ -83,10 +87,36 @@ layout: default
   </div>
 </div>
 
+<div class="section" id="html-lang">
+  <div class="col">
+    <h3>Atribut Bahasa</h3>
+    <p>Dari spec HTML5:</p>
+    <blockquote>
+      <p>Penulis didorong untuk menentukan sebuah atribut lang pada elemen root html, memberikan bahasa dokumen tersebut. Ini membantu alat sintesis bahasa untuk menentukan pengucapan yang dipakai, alat penerjemah untuk menentukan peraturan apa yang dipakai, dan sebagainya.</p>
+    </blockquote>
+    <p>Baca lebih lanjut mengenai atribut <code>lang</code> <a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">di spec tersebut (Bahasa Inggris)</a>.</p>
+    <p>Pergi ke Sitepoint untuk sebuah <a href="http://reference.sitepoint.com/html/lang-codes">daftar dari kode-kode bahasa (Bahasa Inggris)</a>.</p>
+  </div>
+  <div class="col">
+    {% highlight html %}{% include html/lang.html %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="html-ie-compatibility-mode">
+  <div class="col">
+    <h3>Mode kompatibilitas IE</h3>
+    <p>Internet Explorer mendukung penggunaan sebuah tag <code>&lt;meta&gt;</code> kompatibilitas dokumen untuk menentukan versi IE yang mana yang me-render halaman tersebut. Kecuali keadaan membutuhkan sebaliknya, ini sangat berguna untuk memerintahkan IE untuk menggunakan mode terbaru yang mendukung dengan <strong>mode edge</strong>.</p>
+    <p>Untuk informasi lebih lanjut, <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">baca artikel Stack Overflow yang hebat ini (Bahasa Inggris)</a>.</p>
+  </div>
+  <div class="col">
+    {% highlight html %}{% include html/ie-compatibility-mode.html %}{% endhighlight %}
+  </div>
+</div>
+
 <div class="section" id="html-encoding">
   <div class="col">
     <h3>Encoding pada karakter</h3>
-    <p>Pastikan rendering yang tepat secara cepat dan mudah dengan menyatakan sebuah encoding karakter yang jelas.</p>
+    <p>Pastikan rendering yang tepat secara cepat dan mudah dengan menyatakan sebuah encoding karakter yang jelas. Ketika menggunakannya, kamu boleh menghindari pemakaian character entities pada HTML kamu, asalkan encoding mereka cocok dengan encoding pada dokumen (umumnya UTF-8).</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/encoding.html %}{% endhighlight %}
@@ -187,7 +217,8 @@ layout: default
       <li>Setiap deklarasi harus terlihat pada barisnya tersendiri untuk laporan error yang lebih akurat.</li>
       <li>Akhiri setiap deklarasi dengan sebuah tanda titik koma. Pada deklarasi terakhir, hal ini pilihan tersendiri, tetapi kode kamu lebih mudah menyebabkan error tanpanya.</li>
       <li>Value yang dipisah dengan tanda koma harus mempunyai sebuah spasi setelah setiap tanda koma.</li>
-      <li>Jangan masukkan spasi setelah koma <em>didalam</em> warna <code>rgb()</code> atau <code>rgba()</code> untuk membedakan value warna dari properti CSS yang memperbolehkan value berjumlah dua atau lebih yang sudah dipisah dengan sebuah koma atau spasi. Juga, jangan prefix sebuah value dengan angka 0 didepannya (misalnya <code>.5</code> daripada <code>0.5</code>.</li>
+      <li>Jangan masukkan spasi setelah koma <em>didalam</em> warna <code>rgb()</code> atau <code>rgba()</code> untuk membedakan value warna dari properti CSS yang memperbolehkan value berjumlah dua atau lebih yang sudah dipisah dengan sebuah koma atau spasi.</li>
+      <li>Jangan prefix sebuah value atau parameter warna dengan angka 0 didepannya (misalnya <code>.5</code> daripada <code>0.5</code> dan <code>.-5px</code> daripada <code>-0.5px</code>).</li>
       <li>Buat semua value hex dalam huruf kecil, misalnya <code>#fff</code>. Huruf kecil lebih mudah dilihat ketika sebuah dokumen dibaca sepintas karena bentuk mereka lebih unik.</li>
       <li>Gunakan value hex pendek ketika ada, misalnya <code>#fff</code> daripada <code>#ffffff</code>.</li>
       <li>Berikan tanda kutip pada value atribut di selector, misalnya <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">Mereka hanya diperlukan pada kasus tertentu (Bahasa Inggris)</a>, dan ini merupakan praktek baik agar konsisten.</li>
@@ -217,6 +248,22 @@ layout: default
   </div>
   <div class="col">
     {% highlight css %}{% include css/declaration-order.css %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="css-import">
+  <div class="col">
+    <h3>Jangan gunakan <code>@import</code></h3>
+    <p>Dibandingkan dengan <code>&lt;link&gt;</code>, <code>@import</code> lebih lambat, menambah request halaman ekstra, dan dapat menyebabkan masalah-masalah tak terduga lainnya. Hindarilah dan pilih pendekatan alternatif:</p>
+    <ul>
+      <li>Gunakan elemen <code>&lt;link&gt;</code> satu atau lebih</li>
+      <li>Compile CSS kamu dengan sebuah preprocessor seperti Sass atau Less ke dalam satu file</li>
+      <li>Satukan file CSS kamu dengan fitur yang diberikan di Rails, Jekyll, atau lingkungan lainnya</li>
+    </ul>
+    <p>Untuk informasi lebih lanjut, <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/">baca artikel ini oleh Steve Souders (Bahasa Inggris)</a>.</p>
+  </div>
+  <div class="col">
+    {% highlight html %}{% include css/import.html %}{% endhighlight %}
   </div>
 </div>
 
@@ -305,6 +352,8 @@ layout: default
       <li>Prefix sebuah class berdasarkan induk terdekat atau class dasarnya.</li>
       <li>Gunakan class <code>.js-*</code> untuk menandakan tingkah lakunya (dibandingkan dengan tampilannya), tetapi taruh class-class berikut diluar CSS kamu.</li>
     </ul>
+    <p>Menggunakan peraturan-peraturan ini tanpa ada perbedaan juga berguna ketika membuat nama-nama variabel Sass and Less.</p>
+    <p>It's also useful to apply many of these same rules when creating Sass and Less variable names.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/class-names.css %}{% endhighlight %}
