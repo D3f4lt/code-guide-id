@@ -21,7 +21,7 @@ Semua penerjemahan diurus oleh pencipta-penciptanya dan mungkin tidak selalu sem
 
 - [Bahasa Ceko](http://smedzlatko.github.io/) - Diterjemahkan oleh [Martin Myslík](https://github.com/Smedzlatko)
 - [Bahasa Cina](http://zoomzhao.github.io/code-guide) - Diterjemahkan oleh [Zoom Zhao](https://github.com/ZoomZhao)
-- [Bahasa Cina, Tradisional](http://juanitofatas.github.io/) - Diterjemahkan oleh [Juanito Fatas](https://github.com/JuanitoFatas)
+- [Bahasa Cina, Tradisional](http://juanitofatas.github.io/code-guide) - Diterjemahkan oleh [Juanito Fatas](https://github.com/JuanitoFatas)
 - [Bahasa Indonesia](http://diagramatics.github.io/code-guide-id) - Diterjemahkan oleh [Steven Sinatra](http://diagramatics.me)
 - [Bahasa Itali](http://alessandro1997.github.io/code-guide) - Diterjemahkan oleh [Alessandro Desantis](http://github.com/alessandro1997)
 - [Bahasa Portugis](http://diegoeis.github.io/code-guide/pt-br/) - Diterjemahkan oleh [Diego Eis](http://tableless.com.br/)
