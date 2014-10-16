@@ -19,14 +19,18 @@ Terinspirasi berat oleh [Idiomatic CSS](https://github.com/necolas/idiomatic-css
 
 Semua penerjemahan diurus oleh pencipta-penciptanya dan mungkin tidak selalu semutakhir dengan [aslinya](http://mdo.github.io/code-guide).
 
-- [Bahasa Ceko](http://smedzlatko.github.io/) - Diterjemahkan oleh [Martin Myslík](https://github.com/Smedzlatko)
-- [Bahasa Cina](http://zoomzhao.github.io/code-guide) - Diterjemahkan oleh [Zoom Zhao](https://github.com/ZoomZhao)
-- [Bahasa Cina, Tradisional](http://juanitofatas.github.io/code-guide) - Diterjemahkan oleh [Juanito Fatas](https://github.com/JuanitoFatas)
+- [Bahasa Ceska](http://smedzlatko.github.io/) - Diterjemahkan oleh [Martin Myslík](https://github.com/Smedzlatko)
 - [Bahasa Indonesia](http://diagramatics.github.io/code-guide-id) - Diterjemahkan oleh [Steven Sinatra](http://diagramatics.me)
-- [Bahasa Itali](http://alessandro1997.github.io/code-guide) - Diterjemahkan oleh [Alessandro Desantis](http://github.com/alessandro1997)
+- [Bahasa Italia](http://alessandro1997.github.io/code-guide) - Diterjemahkan oleh [Alessandro Desantis](http://github.com/alessandro1997)
+- [Bahasa Jepang](http://kia-king.com/code-guide/) - Diterjemahkan oleh [Kia King Ishii](https://github.com/kiaking)
+- [Bahasa Jerman](http://BackendButters.github.io/code-guide/) - Diterjemahkan oleh [BackendButters](https://github.com/BackendButters)
 - [Bahasa Portugis](http://diegoeis.github.io/code-guide/pt-br/) - Diterjemahkan oleh [Diego Eis](http://tableless.com.br/)
+- [Bahasa Perancis](http://pixelastic.github.io/code-guide/) - Diterjemahkan oleh [Tim Carry](https://github.com/pixelastic/)
 - [Bahasa Rusia](http://instanceofpro.github.io/code-guide/) - Diterjemahkan oleh [Eugene Abrosimov](https://github.com/instanceofpro)
 - [Bahasa Spanyol](http://adrianayala.mx/code-guide/es/) - Diterjemahkan oleh [Adrian Ayala](http://adrianayala.mx)
+- [Bahasa Tionghoa](http://zoomzhao.github.io/code-guide) - Diterjemahkan oleh [Zoom Zhao](https://github.com/ZoomZhao)
+- [Bahasa Tionghoa](http://codeguide.bootcss.com/) - Diterjemahkan oleh [Wang Sai](https://github.com/wangsai)
+- [Bahasa Tionghoa, Tradisional](http://juanitofatas.github.io/code-guide) - Diterjemahkan oleh [Juanito Fatas](https://github.com/JuanitoFatas)
 
 
 
