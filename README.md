@@ -9,7 +9,7 @@ Panduan Pedoman Kode adalah sebuah project untuk mendokumentasikan standar dari 
 
 ### Lisensi
 
-Dirilis dibawah MIT oleh, dan copyright 2014, @mdo.
+Dirilis dibawah MIT oleh, dan hak cipta 2014, @mdo.
 
 ### Terimakasih
 
