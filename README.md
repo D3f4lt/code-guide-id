@@ -26,6 +26,7 @@ Semua penerjemahan diurus oleh pencipta-penciptanya dan mungkin tidak selalu sem
 - [Bahasa Jerman](http://BackendButters.github.io/code-guide/) - Diterjemahkan oleh [BackendButters](https://github.com/BackendButters)
 - [Bahasa Korea](http://code-guide.aliencube.org/) - Diterjemahkan oleh [Aliencube](https://github.com/aliencube)
 - [Bahasa Perancis](http://pixelastic.github.io/code-guide/) - Diterjemahkan oleh [Tim Carry](https://github.com/pixelastic/)
+- [Bahasa Polski](http://bondarewicz.github.io/code-guide/) - Diterjemahkan oleh [Łukasz Bondarewicz](https://github.com/bondarewicz)
 - [Bahasa Portugis](http://diegoeis.github.io/code-guide/pt-br/) - Diterjemahkan oleh [Diego Eis](http://tableless.com.br/)
 - [Bahasa Rusia](http://instanceofpro.github.io/code-guide/) - Diterjemahkan oleh [Eugene Abrosimov](https://github.com/instanceofpro)
 - [Bahasa Spanyol](http://adrianayala.mx/code-guide/es/) - Diterjemahkan oleh [Adrian Ayala](http://adrianayala.mx)
