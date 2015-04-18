@@ -1,0 +1,9 @@
+// Contoh yang buruk
+.element {
+  margin: 10px 0 @variable*2 10px;
+}
+
+// Contoh yang baik
+.element {
+  margin: 10px 0 (@variable * 2) 10px;
+}
