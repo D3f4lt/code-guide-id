@@ -19,7 +19,9 @@ Terinspirasi berat oleh [Idiomatic CSS](https://github.com/necolas/idiomatic-css
 
 Semua penerjemahan diurus oleh pencipta-penciptanya dan mungkin tidak selalu semutakhir dengan [aslinya](http://mdo.github.io/code-guide).
 
+- [Bahasa Belanda](http://chunfeilung.github.io/code-guide/) - Diterjemahkan oleh [Chun Fei Lung](https://github.com/chunfeilung)
 - [Bahasa Ceska](http://smedzlatko.github.io/) - Diterjemahkan oleh [Martin Myslík](https://github.com/Smedzlatko)
+- [Bahasa Denmark](http://ohm.sh/code-guide/) - Diterjemahkan oleh [Mads Ohm Larsen](https://github.com/omegahm)
 - [Bahasa Indonesia](http://diagramatics.github.io/code-guide-id) - Diterjemahkan oleh [Steven Sinatra](http://diagramatics.me)
 - [Bahasa Italia](http://alessandro1997.github.io/code-guide) - Diterjemahkan oleh [Alessandro Desantis](http://github.com/alessandro1997)
 - [Bahasa Jepang](http://kia-king.com/code-guide/) - Diterjemahkan oleh [Kia King Ishii](https://github.com/kiaking)
